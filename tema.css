@@ -1,0 +1,31 @@
+.escuro-principal {
+    background: #7B1FA2;
+}
+
+.principal {
+    background: #9C27B0;
+}
+
+.claro-principal {
+    background: #E1BEE7;
+}
+
+.texto-principal {
+    color: #FFFFFF;
+}
+
+.contraste {
+    background: #FFC107;
+}
+
+.principal-texto {
+    color: #212121;
+}
+
+.secundario-texto {
+    color: #757575;
+}
+
+.divisor {
+    border: #BDBDBD;
+}
