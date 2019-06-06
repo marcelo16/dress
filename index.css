@@ -5,6 +5,7 @@ body {
     height: 100%;
     background: #ffffff;
    margin: 0;
+   font-family: Roboto, sans-serif;
 }
 header{
     position: relative;
@@ -19,7 +20,125 @@ header > div{
     width: 90%;
     max-width: 1200px;
     height: 100%;
-    background: #0008;
+    /* background: #0008; */
     margin: 0 auto;
 }
 
+
+header > div > nav{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+ header > div > nav > a, 
+ header > div > nav > span {
+     
+     color: #ffffff;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 18px;
+     line-height: 2em;
+     padding: 0 10px;
+ }   
+
+ header > div > nav > span {
+
+ }
+
+ main{
+     position: relative;
+     width: 100%;
+     heigth: auto;
+ }
+ section.slide{
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 400px;
+    /* background: #0008; */
+    margin: 50px auto;
+    overflow: hidden;
+ }
+
+section.slide > img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 400px;
+    animation: slide;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+
+}
+section.slide > img::nth-child(1) {
+  animation-name:  slide2;
+  animation-delay: 0s;
+}
+section.slide > img:nth-child(2){
+    animation-delay: 9.5s;
+}
+ 
+section.slide > img:nth-child(3){
+    animation-delay: 19.5s;
+}
+    
+section.slide > img:nth-child(4){
+    animation-delay: 29.5s;
+}
+
+section.slide > img:nth-child(5){
+    animation-delay: 39.5s;
+}
+section.slide > img:nth-child(6){
+    animation-delay: 49.5s;
+}   
+
+@keyframes slide {
+    0% {
+        top: 400px;
+        z-index: 2;
+    }
+    0.5% {
+        top: 0;
+    }
+    16.66% {
+        top: 0;
+        z-index: 2;
+    }
+    16.67% {
+        z-index: 1;
+    }
+    99.5% {
+        top: 400px;
+    }
+    100% {
+        top: 400px;
+        z-index: 1;
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        top: 0px;
+        z-index: 2;
+    }
+    16.66% {
+        top: 0;
+        z-index: 2;
+    }
+    16.67% {
+        z-index: 1;
+    }
+    99.49% {
+        z-index: 1;
+    }
+    99.5% {
+        top: 400px;
+        z-index: 2;
+    }
+    100% {
+        top: 0px;
+        z-index: 2;
+    }
+}
