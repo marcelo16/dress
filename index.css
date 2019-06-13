@@ -49,7 +49,7 @@ header > div > nav{
  main{
      position: relative;
      width: 100%;
-     heigth: auto;
+     height:  80vh;
  }
  section.slide{
     position: relative;
