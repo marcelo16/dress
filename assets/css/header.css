@@ -1,0 +1,40 @@
+header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #9C27B0;
+    box-shadow: 0 0 10px #0008;
+
+}
+header > div{
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    /* background: #0008; */
+    margin: 0 auto;
+}
+
+header > div img{
+    height: 80px;
+}
+
+header > div > nav{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+ header > div > nav > a, 
+ header > div > nav > span {
+     
+     color: #ffffff;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 18px;
+     line-height: 2em;
+     padding: 0 10px;
+ }   
+
+
+ 

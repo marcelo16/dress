@@ -6,51 +6,41 @@ body {
     background: #ffffff;
    margin: 0;
    font-family: Roboto, sans-serif;
+   font-size: 14px;
 }
-header{
-    position: relative;
-    width: 100%;
-    height: 150px;
-    background: #9C27B0;
-    box-shadow: 0 0 10px #0008;
-
-}
-header > div{
-    position: relative;
-    width: 90%;
-    max-width: 1200px;
-    height: 100%;
-    /* background: #0008; */
-    margin: 0 auto;
-}
-
-
-header > div > nav{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
- header > div > nav > a, 
- header > div > nav > span {
-     
-     color: #ffffff;
-     text-decoration: none;
-     text-transform: uppercase;
-     font-size: 18px;
-     line-height: 2em;
-     padding: 0 10px;
- }   
-
- header > div > nav > span {
-
- }
-
  main{
      position: relative;
      width: 100%;
-     height:  80vh;
+     height:  auto;
  }
+
+ section.apresentacao{
+     position: relative;
+     width: 100%;
+     height: auto;
+     min-height: 100vh - 660px;
+
+ }
+ section.apresentacao > div {
+     position: relative;
+     width: 90%;
+     max-width: 1200px;
+     height: auto;
+     margin: 0 auto;
+ }
+ section.apresentacao > div > h2 {
+    text-align: center;
+     color:#9C27B0; 
+ }
+ section.apresentacao > div > p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 50%;
+    margin: 50px auto;
+
+ }
+
  section.slide{
     position: relative;
     width: 90%;
